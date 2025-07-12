@@ -1,0 +1,8 @@
+Column Name,Data Type
+Student ID,object
+Name,object
+Gender,object
+Age,int64
+Department,object
+Enrollment Year,int64
+GPA222,float64
