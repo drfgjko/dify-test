@@ -1,0 +1,12 @@
+﻿字段名,数据类型,说明
+BookID,VARCHAR(10),书籍编号
+Title,VARCHAR(255),书名
+Author,VARCHAR(100),作者
+Publisher,VARCHAR(100),出版社
+PublishYear,INT,出版年份
+ISBN,VARCHAR(20),国际标准书号
+Category,VARCHAR(50),分类
+Language,VARCHAR(30),语言
+Pages,INT,页数
+Price,"DECIMAL(10,2)",价格
+Stock,INT,库存数量

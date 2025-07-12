@@ -1,0 +1,8 @@
+﻿字段名,数据类型,说明
+BorrowID,VARCHAR(10),借阅编号
+BookID,VARCHAR(10),书籍编号
+UserID,VARCHAR(10),用户编号
+BorrowDate,DATE,借书日期
+DueDate,DATE,应还日期
+ReturnDate,DATE,归还日期
+Status,VARCHAR(20),借阅状态
