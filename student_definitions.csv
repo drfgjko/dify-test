@@ -1,0 +1,8 @@
+﻿Field Name,Data Type,Constraints,Description
+student_id,VARCHAR(10),"PRIMARY KEY, NOT NULL",Student ID (Format: S0001)
+name,VARCHAR(50),NOT NULL,Full name
+gender,"ENUM('Male', 'Female')",NOT NULL,Gender
+age,TINYINT UNSIGNED,NOT NULL,Age (19-255)
+department,VARCHAR(50),NOT NULL,Academic department
+enrollment_year,YEAR,NOT NULL,Year of enrollment
+gpa,"DECIMAL(3,2)",NOT NULL,Grade Point Average (0.00-4.00)
