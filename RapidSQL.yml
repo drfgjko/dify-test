@@ -168,30 +168,6 @@ workflow:
         zIndex: 0
       - data:
           isInLoop: false
-          sourceType: if-else
-          targetType: answer
-        id: 1752059344642-false-1752059507002-target
-        selected: false
-        source: "1752059344642"
-        sourceHandle: "false"
-        target: "1752059507002"
-        targetHandle: target
-        type: custom
-        zIndex: 0
-      - data:
-          isInLoop: false
-          sourceType: if-else
-          targetType: document-extractor
-        id: 1752059344642-true-1751547772299-target
-        selected: false
-        source: "1752059344642"
-        sourceHandle: "true"
-        target: "1751547772299"
-        targetHandle: target
-        type: custom
-        zIndex: 0
-      - data:
-          isInLoop: false
           sourceType: document-extractor
           targetType: assigner
         id: 1751547772299-source-1751547526398-target
@@ -292,17 +268,6 @@ workflow:
         zIndex: 0
       - data:
           isInLoop: false
-          sourceType: assigner
-          targetType: if-else
-        id: 1752328584403-source-1752059344642-target
-        source: "1752328584403"
-        sourceHandle: source
-        target: "1752059344642"
-        targetHandle: target
-        type: custom
-        zIndex: 0
-      - data:
-          isInLoop: false
           sourceType: start
           targetType: iteration
         id: 1751546675577-source-1752329760237-target
@@ -368,6 +333,17 @@ workflow:
         source: "1751546786399"
         sourceHandle: "1752299986210"
         target: "1751547384681"
+        targetHandle: target
+        type: custom
+        zIndex: 0
+      - data:
+          isInLoop: false
+          sourceType: assigner
+          targetType: document-extractor
+        id: 1752328584403-source-1751547772299-target
+        source: "1752328584403"
+        sourceHandle: source
+        target: "1751547772299"
         targetHandle: target
         type: custom
         zIndex: 0
@@ -722,12 +698,12 @@ workflow:
         height: 88
         id: "1751547526398"
         position:
-          x: 2566
-          y: 286
+          x: 2409.7367151455137
+          y: 394.18227413002904
         positionAbsolute:
-          x: 2566
-          y: 286
-        selected: false
+          x: 2409.7367151455137
+          y: 394.18227413002904
+        selected: true
         sourcePosition: right
         targetPosition: left
         type: custom
@@ -744,11 +720,11 @@ workflow:
         height: 92
         id: "1751547772299"
         position:
-          x: 2232
-          y: 286
+          x: 2004.8172243269391
+          y: 394.18227413002904
         positionAbsolute:
-          x: 2232
-          y: 286
+          x: 2004.8172243269391
+          y: 394.18227413002904
         selected: false
         sourcePosition: right
         targetPosition: left
@@ -769,81 +745,6 @@ workflow:
         positionAbsolute:
           x: 3633.714285714286
           y: 419.8571428571429
-        selected: false
-        sourcePosition: right
-        targetPosition: left
-        type: custom
-        width: 244
-      - data:
-          cases:
-            - case_id: "true"
-              conditions:
-                - comparison_operator: exists
-                  id: b46a68af-2f16-457f-bb98-5702e0f0bb17
-                  sub_variable_condition:
-                    case_id: c999a102-76f5-4d4f-aa65-76da52f8af14
-                    conditions:
-                      - comparison_operator: end with
-                        id: 940835f1-e6b6-432a-b819-4382b27e5b0e
-                        key: name
-                        value: .csv
-                        varType: string
-                    logical_operator: and
-                  value: ""
-                  varType: file
-                  variable_selector:
-                    - "1751546675577"
-                    - table_file
-                - comparison_operator: all of
-                  id: f0447a6b-8d31-459c-8912-963d420de38f
-                  sub_variable_condition:
-                    case_id: a335845e-5d3e-4462-bc61-ecca763df857
-                    conditions:
-                      - comparison_operator: end with
-                        id: 68948bf6-80cc-4469-9c0b-6a38a6de0d57
-                        key: name
-                        value: csv
-                        varType: string
-                    logical_operator: and
-                  value: ""
-                  varType: array[file]
-                  variable_selector:
-                    - "1751546675577"
-                    - table_file
-              id: "true"
-              logical_operator: and
-          desc: ""
-          selected: false
-          title: 文件类型校验
-          type: if-else
-        height: 176
-        id: "1752059344642"
-        position:
-          x: 1807
-          y: 402
-        positionAbsolute:
-          x: 1807
-          y: 402
-        selected: false
-        sourcePosition: right
-        targetPosition: left
-        type: custom
-        width: 244
-      - data:
-          answer: 文件格式错误！
-          desc: ""
-          selected: false
-          title: 文件格式错误
-          type: answer
-          variables: []
-        height: 102
-        id: "1752059507002"
-        position:
-          x: 2566
-          y: 415
-        positionAbsolute:
-          x: 2566
-          y: 415
         selected: false
         sourcePosition: right
         targetPosition: left
@@ -1094,6 +995,6 @@ workflow:
         type: custom
         width: 244
     viewport:
-      x: -281.4610280700999
-      y: -55.41314824085646
-      zoom: 0.5488686243867579
+      x: -293.5943709162989
+      y: 138.7998399586
+      zoom: 0.445819855442895
